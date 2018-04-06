@@ -1,0 +1,127 @@
+html, body {
+  	height: 100%;
+  	margin: 0;
+  	padding: 0;
+  	background-color: #EEEEEE;
+}
+
+body {
+	display: grid; 
+	grid-template-rows: 100px 1fr;
+	grid-template-columns: 1fr;
+	font-family: 'Space Mono', monospace;
+}
+
+h1 {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	text-align: center;
+	font-size: 25px;
+	margin-top: 30px;
+}
+
+h2 {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	font-size: 17px;
+	font-weight: lighter;
+	text-align: center;
+	z-index: 2;
+	margin-top: 107px;
+	margin-left: -50px;
+
+}
+
+#map {
+	height: 90%;
+	width: 95%;
+	margin-bottom: 10px;
+	grid-row: 2/3;
+	display: flex;
+	align-self: flex-end;
+	margin-left: 10px;
+	z-index: 1
+}
+
+#weather {
+	grid-row: 1/2;
+	grid-column: 1/2;
+	font-size: 17px;
+	z-index: 2;
+	text-align: center;
+	margin-top: 107px;
+	margin-left: 210px;
+}
+
+@media only screen and (min-width: 660px) { /* ipad versie*/
+
+	#map {
+	  	height: 95%;
+	  	width: 97%;
+		margin-bottom: 10px;
+	  	margin-left: 12px;
+	}
+
+	h1 {
+		font-size: 28px;
+		margin-top: 30px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	h2 {
+		font-size: 17px;
+		margin-top: 82px;
+	}
+
+	#weather {
+		font-size: 20px;
+		margin-top: 80px;
+		margin-left: 215px;
+	}
+}
+
+@media only screen and (min-width: 1366px) { /* Desktop versie*/
+
+	#map {
+	  	height: 95%;
+	  	width: 97%;
+	  	margin-bottom: 10px;
+	  	margin-left: 20px;
+	}
+
+}
+
+
+@media only screen and (min-width: 1920px) { /* iMac versie*/
+	body {
+		display: grid; 
+		grid-template-rows: 100px 1fr;
+		grid-template-columns: 1920px;
+	}	
+
+	#map {
+	 	height: 95%;
+	  	width: 98%;
+	  	margin-bottom: 10px;
+	}
+
+	h1 {
+		font-size: 37px;
+		margin-top: 25px;
+	}
+
+	h2 {
+		font-size: 25px;
+
+
+	}
+
+	#weather {
+		font-size: 25px;
+		margin-top: 82px;
+		margin-left: 330px;
+	}
+}
+
+
